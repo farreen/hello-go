@@ -1,0 +1,1 @@
+Write a simple program to read a file word by word and store them in an array ,and then print each word from the array on a new line .Also, print each word in the reverse order , on a newline.
