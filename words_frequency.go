@@ -11,7 +11,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-
 	counts := make(map[string]int)
 	for _, word := range words {
 		_, ok := counts[word]

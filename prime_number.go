@@ -3,19 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	var number, i int
-	fmt.Println("Enter a number ")
-	fmt.Scanf("%d", &number)
-
-	for i = 2; i <= number-1; i++ {
-		if number%i == 0 {
-			break
+	var l, u, i int
+	fmt.Println("Enter two numbers ")
+	fmt.Scanf("%d%d", &l, &u)
+	for x := l + 1; x <= u-1; x++ {
+		for i = 2; i < x; i++ {
+			if x%i == 0 {
+				break
+			}
 		}
-	}
-
-	if number == i {
-		fmt.Println("Prime number")
-	} else {
-		fmt.Println("Not a Prime number")
+		if x == i {
+			fmt.Printf("%d ", x)
+		}
 	}
 }

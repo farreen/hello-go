@@ -8,15 +8,16 @@ import (
 )
 
 func main() {
+	//words, err := scanwords(os.Args[1])
+
 	words, err := scanwords("./numbers.txt")
 	if err != nil {
 		panic(err)
-
 	}
 	for _, word := range words {
 		nums, _ := strconv.Atoi(word)
 		result := nums * 2
-		fmt.Println(nums, "*2 =", result)
+		fmt.Println(nums, "* 2 =", result)
 	}
 }
 
