@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// find all prime numbers between two given numbers
 func main() {
 	var l, u, i int
 	fmt.Println("Enter two numbers ")
