@@ -7,18 +7,18 @@ func main() {
 }
 
 func gcd(a, b int) int {
-	var x, y int
+	var max, min int
 	if a > b {
-		x = a
-		y = b
+		max = a
+		min = b
 	} else {
-		x = b
-		y = a
+		max = b
+		min = a
 	}
-	for x%y != 0 {
-		temp := x
-		x = y
-		y = temp % x
+	for max%min != 0 {
+		temp := max
+		max = min
+		min = temp % max
 	}
-	return y
+	return min
 }
